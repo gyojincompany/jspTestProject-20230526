@@ -9,7 +9,7 @@
 <body>
 	<h2>회원 탈퇴하기</h2>
 	<hr>
-	<form action="drawcheck.jsp">
+	<form action="drawCheck.jsp">
 		아이디 : <input type="text" name="userID">
 		<input type="submit" value="회원탈퇴">
 	</form>
