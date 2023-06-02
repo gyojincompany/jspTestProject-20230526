@@ -11,5 +11,19 @@
 	<hr>
 	회원 가입을 축하합니다!<br>
 	관리자인 경우에만 로그인 기능이 가능합니다.<br><br>
+	<table border="0">
+		<tr>
+			<td>
+				<form action="membership.jsp">
+					<input type="submit" value="◀ 사용자 공간 이동">
+				</form>
+			</td>
+			<td>
+				<form action="login.jsp">
+					<input type="submit" value="관리자 모드 이동 ▶">
+				</form>
+			</td>
+		</tr>	
+	</table>
 </body>
 </html>

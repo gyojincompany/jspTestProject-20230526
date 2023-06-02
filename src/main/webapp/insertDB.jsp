@@ -10,12 +10,14 @@
 </head>
 <body>
 	<%
-		request.setCharacterEncoding("utf-8");
+		//signup.jsp에서 넘어온 파라미터값 불러오기
+		request.setCharacterEncoding("utf-8");//한글 깨짐 방지
 	
 		String mid = request.getParameter("userID");//아이디
-		String mpw = request.getParameter("userPW");//아이디
-		String memail = request.getParameter("userMAIL");//아이디
+		String mpw = request.getParameter("userPW");//비밀번호
+		String memail = request.getParameter("userMAIL");//이메일
 		
+		//DATABASE 연동 작업
 		String driverName = "com.mysql.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/jspdb";
 		String username = "root";
